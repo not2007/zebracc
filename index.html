@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Zebra Emoji</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			
+			body {
+				/*overflow: hidden;*/
+			}
+			
+			.bg {
+				/*width: 100%;*/
+				height: auto;
+				/*position: absolute;
+				left: 0;
+				top: 0;*/
+				overflow: hidden;
+			}
+			
+			.logo {
+				position: absolute;
+				/*margin-top: 20px;
+				margin-left: 20px;*/
+				left: 15%;
+				top: 35px;
+			}
+			
+			.contentBox {
+				width: 100%;
+				/*background-color: gold;*/
+				flex-direction: column;
+				position: relative;
+				left: 0;
+				margin-top: 150px;
+			}
+			
+			.phone {
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			
+			#all {
+				overflow: hidden;
+				/*background-image: url(img/background.jpg);
+				background-size: cover;*/
+				/*background-repeat: no-repeat;*/
+				/*background-repeat-x: inherit;*/
+				/*background: linear-gradient(to bottom right, #fba739, #fb4939);*/
+				background-image: url(img/bg.png);
+				background-size: cover;
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 100vw;
+				min-height: 100vh;
+				padding-bottom: 100px;
+			}
+			
+			.text_content {
+				width: 80%;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+				color: white;
+				font-size: 24px;
+				/*background-color: black;*/
+				margin-top: 100px;
+				text-decoration: none;
+				/*text-align: center;*/
+				/*text-align: left;*/
+			}
+			
+			.download {
+				margin-top: 74px;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			
+			.newdownload {
+				margin-top: 120px;
+				width: 484px;
+				height: 88px;
+				border-radius: 60px;
+				background-color: white;
+				color: rgb(248, 42, 13);
+				font-size: 32px;
+			}
+			
+			@media only screen and (min-width: 1024px) {
+				.contentBox {
+					/*flex-direction: row;*/
+					width: 1413px;
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
+					top: 5%;
+				}
+				.text_content {
+					width: 47.6%;
+					left: 0;
+					float: right;
+					transform: none;
+					/*width: auto;*/
+					margin-top: 0;
+					margin-left: 100px;
+				}
+				.phone {
+					left: 0;
+					float: left;
+					transform: none;
+				}
+				#all {
+					height: 100vh;
+					padding-bottom: 0px;
+				}
+				.download {
+					left: 0;
+					transform: translateX(0);
+				}
+			}
+			.lianxi{
+				width:100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="all">
+			<!--<img src="img/img/background.jpg" class="bg" />-->
+
+			<div class="contentBox">
+				
+				<div class="text_content">
+					<!-- <div style="font-size: 24px;margin-top: 37px;">Download APP</div> -->
+					<div style="font-size: 24px;color: #ffffff;margin-top: 37px;color: #000000;">The daily life of the Zebra CC who plays the piano</div>
+					<p style="font-size: 38px;margin-top:46px;color: #51c9db;font-weight: 600;">Zebra Emoji</p>
+					<p style="font-size: 28px;margin-top: 60px;margin-left: -15px;color: #000000;">- Every emoji is animated.</p>
+					<p style="font-size: 28px;margin-top: 24px;margin-left: -15px;color: #000000;">- Choose from different expressions like happy, thumbs up, facepalm...</p>
+					<p style="font-size: 28px;margin-top: 24px;margin-left: -15px;color: #000000;">- Send via iMessage, Facebook, Instagram</p>
+					<p style="font-size: 28px;margin-top: 24px;margin-left: -15px;color: #000000;">&nbsp;&nbsp;Twitter, …</p>
+					<img src="img/Download.png" class="download" id="download" />
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<img src="img/lianxi.jpg" class="lianxi" />
+		</div>
+	</body>
+	<script>
+		document.getElementById('download').addEventListener('click', function() {
+						window.location.href = 'https://apps.apple.com/cn/app/id1528446115';
+					})
+	</script>
+</html>

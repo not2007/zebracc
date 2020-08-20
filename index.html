@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Zebra Emoji</title>
+		<title>Zebra Piano</title>
 		<style type="text/css">
 			* {
 				margin: 0;
@@ -28,7 +28,7 @@
 				position: absolute;
 				/*margin-top: 20px;
 				margin-left: 20px;*/
-				left: 15%;
+				left: 5%;
 				top: 35px;
 			}
 			
@@ -47,6 +47,9 @@
 				transform: translateX(-50%);
 			}
 			
+			.footer{height:120px}
+			.blue{background-color:#07aeef}
+			
 			#all {
 				overflow: hidden;
 				/*background-image: url(img/background.jpg);
@@ -54,8 +57,9 @@
 				/*background-repeat: no-repeat;*/
 				/*background-repeat-x: inherit;*/
 				/*background: linear-gradient(to bottom right, #fba739, #fb4939);*/
-				background-image: url(img/bg.png);
+				background-image: url(img/bg.jpg);
 				background-size: cover;
+				background-color: #fcee2e;
 				background-attachment: fixed;
 				background-repeat: no-repeat;
 				background-position: center;
@@ -95,6 +99,16 @@
 				font-size: 32px;
 			}
 			
+			a {
+				color:#ffffff;
+				text-decoration:none;
+				}
+			
+			a:hover, a:active, a:focus {
+				color: #fcee2e;
+			
+			}
+			
 			@media only screen and (min-width: 1024px) {
 				.contentBox {
 					/*flex-direction: row;*/
@@ -107,7 +121,7 @@
 				.text_content {
 					width: 47.6%;
 					left: 0;
-					float: right;
+					float: left;
 					transform: none;
 					/*width: auto;*/
 					margin-top: 0;
@@ -119,16 +133,14 @@
 					transform: none;
 				}
 				#all {
-					height: 100vh;
+					height: 90vh;
 					padding-bottom: 0px;
 				}
 				.download {
+					top: 0px;
 					left: 0;
 					transform: translateX(0);
 				}
-			}
-			.lianxi{
-				width:100%;
 			}
 		</style>
 	</head>
@@ -136,23 +148,31 @@
 	<body>
 		<div id="all">
 			<!--<img src="img/img/background.jpg" class="bg" />-->
+			<img src="img/icon.png" class="logo" />
 
 			<div class="contentBox">
-				
+				<img src="img/left.png" class="phone" />
 				<div class="text_content">
 					<!-- <div style="font-size: 24px;margin-top: 37px;">Download APP</div> -->
-					<div style="font-size: 24px;color: #ffffff;margin-top: 37px;color: #000000;">The daily life of the Zebra CC who plays the piano</div>
-					<p style="font-size: 38px;margin-top:46px;color: #51c9db;font-weight: 600;">Zebra Emoji</p>
-					<p style="font-size: 28px;margin-top: 60px;margin-left: -15px;color: #000000;">- Every emoji is animated.</p>
-					<p style="font-size: 28px;margin-top: 24px;margin-left: -15px;color: #000000;">- Choose from different expressions like happy, thumbs up, facepalm...</p>
-					<p style="font-size: 28px;margin-top: 24px;margin-left: -15px;color: #000000;">- Send via iMessage, Facebook, Instagram</p>
-					<p style="font-size: 28px;margin-top: 24px;margin-left: -15px;color: #000000;">&nbsp;&nbsp;Twitter, …</p>
-					<img src="img/Download.png" class="download" id="download" />
+					<div style="font-size: 28px;color: #32322d;margin-top: 0px;">The daily life of the Zebra CC who plays the piano</div>
+					<p style="font-size: 48px;margin-top:30px;color: #07aeef;font-weight: 600;">Zebra Emoji</p>
+					<p style="font-size: 24px;margin-top: 30px;color: #32322d;margin-left: 0px;">- Every emoji is animated</p>
+					<p style="font-size: 24px;margin-top: 24px;color: #32322d;margin-left: 0px;">- Choose from different expressions like happy, thumbs up, facepalm...</p>
+					<p style="font-size: 24px;margin-top: 24px;color: #32322d;margin-left: 0px;">- Send via iMessage, Facebook, Instagram, Twitter, …</p>
+					<img src="img/download.png" class="download" id="download" margin-top: -80px;/>
 				</div>
 				<div style="clear: both;"></div>
 			</div>
-			<img src="img/lianxi.jpg" class="lianxi" />
 		</div>
+		<!-- FOOTER -->
+		<div id="footer" class="footer blue">
+			<div class="footer center">
+				<p style="text-align: center;font-size: 20px;color: #ffffff;"><br />- Powered by Xicai Network -<br /><a href="mailto:qicai2019@icloud.com"> Contact us: qicai2019@icloud.com </a>
+				</p>
+		      
+		    </div>     
+		</div> 
+		<!-- /footer -->
 	</body>
 	<script>
 		document.getElementById('download').addEventListener('click', function() {
